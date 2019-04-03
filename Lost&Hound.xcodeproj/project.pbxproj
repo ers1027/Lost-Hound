@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207726F0224D6833001C5EE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 207726EF224D6833001C5EE6 /* GoogleService-Info.plist */; };
 		20A1AE862249999F009EDB31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1AE852249999F009EDB31 /* AppDelegate.swift */; };
 		20A1AE882249999F009EDB31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1AE872249999F009EDB31 /* ViewController.swift */; };
 		20A1AE8B2249999F009EDB31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE892249999F009EDB31 /* Main.storyboard */; };
 		20A1AE8D224999A0009EDB31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE8C224999A0009EDB31 /* Assets.xcassets */; };
 		20A1AE90224999A0009EDB31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE8E224999A0009EDB31 /* LaunchScreen.storyboard */; };
+		72F032B879B69BDA762FED01 /* Pods_Lost_Hound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AA4E7DA48AA8448E1E16DC /* Pods_Lost_Hound.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207726EF224D6833001C5EE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		20A1AE822249999F009EDB31 /* Lost&Hound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost&Hound.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A1AE852249999F009EDB31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20A1AE872249999F009EDB31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		20A1AE8C224999A0009EDB31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20A1AE8F224999A0009EDB31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A1AE91224999A0009EDB31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		605183BB8046A1E859C6ED0B /* Pods-Lost&Hound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost&Hound.debug.xcconfig"; path = "Target Support Files/Pods-Lost&Hound/Pods-Lost&Hound.debug.xcconfig"; sourceTree = "<group>"; };
+		9257150227FBDAEB623BA722 /* Pods-Lost&Hound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lost&Hound.release.xcconfig"; path = "Target Support Files/Pods-Lost&Hound/Pods-Lost&Hound.release.xcconfig"; sourceTree = "<group>"; };
+		A0AA4E7DA48AA8448E1E16DC /* Pods_Lost_Hound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lost_Hound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F032B879B69BDA762FED01 /* Pods_Lost_Hound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E380EFFF85697C5A7F4413D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				605183BB8046A1E859C6ED0B /* Pods-Lost&Hound.debug.xcconfig */,
+				9257150227FBDAEB623BA722 /* Pods-Lost&Hound.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		20A1AE792249999F009EDB31 = {
 			isa = PBXGroup;
 			children = (
 				20A1AE842249999F009EDB31 /* Lost&Hound */,
 				20A1AE832249999F009EDB31 /* Products */,
+				1E380EFFF85697C5A7F4413D /* Pods */,
+				244573E06F12D5BAAB63884A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,17 @@
 				20A1AE8C224999A0009EDB31 /* Assets.xcassets */,
 				20A1AE8E224999A0009EDB31 /* LaunchScreen.storyboard */,
 				20A1AE91224999A0009EDB31 /* Info.plist */,
+				207726EF224D6833001C5EE6 /* GoogleService-Info.plist */,
 			);
 			path = "Lost&Hound";
+			sourceTree = "<group>";
+		};
+		244573E06F12D5BAAB63884A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA4E7DA48AA8448E1E16DC /* Pods_Lost_Hound.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20A1AE94224999A0009EDB31 /* Build configuration list for PBXNativeTarget "Lost&Hound" */;
 			buildPhases = (
+				091796FB092A7D7AE75C556B /* [CP] Check Pods Manifest.lock */,
 				20A1AE7E2249999F009EDB31 /* Sources */,
 				20A1AE7F2249999F009EDB31 /* Frameworks */,
 				20A1AE802249999F009EDB31 /* Resources */,
+				9647E44BC937B450D106B953 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +126,7 @@
 				TargetAttributes = {
 					20A1AE812249999F009EDB31 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -123,12 +154,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A1AE90224999A0009EDB31 /* LaunchScreen.storyboard in Resources */,
+				207726F0224D6833001C5EE6 /* GoogleService-Info.plist in Resources */,
 				20A1AE8D224999A0009EDB31 /* Assets.xcassets in Resources */,
 				20A1AE8B2249999F009EDB31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091796FB092A7D7AE75C556B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lost&Hound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9647E44BC937B450D106B953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lost&Hound/Pods-Lost&Hound-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lost&Hound/Pods-Lost&Hound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20A1AE7E2249999F009EDB31 /* Sources */ = {
@@ -280,9 +363,11 @@
 		};
 		20A1AE95224999A0009EDB31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 605183BB8046A1E859C6ED0B /* Pods-Lost&Hound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Lost&Hound/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,16 +375,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "shu.Lost-Hound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		20A1AE96224999A0009EDB31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9257150227FBDAEB623BA722 /* Pods-Lost&Hound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Lost&Hound/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "shu.Lost-Hound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

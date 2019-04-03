@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,239 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lost_Hound" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tni-gN-w3a">
+                                <rect key="frame" x="0.0" y="518" width="375" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-sM-w2b">
+                                        <rect key="frame" x="162" y="21" width="51" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.34162971682922455" green="0.7012255570380711" blue="0.30022436923474172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bwg-sM-w2b" firstAttribute="centerY" secondItem="tni-gN-w3a" secondAttribute="centerY" id="6Ge-wY-wLN"/>
+                                    <constraint firstItem="bwg-sM-w2b" firstAttribute="top" secondItem="tni-gN-w3a" secondAttribute="top" constant="21" id="EV6-fA-LU6"/>
+                                    <constraint firstItem="bwg-sM-w2b" firstAttribute="centerX" secondItem="tni-gN-w3a" secondAttribute="centerX" id="cBy-ZB-Kqu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAE-va-5RT">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQr-HQ-WoO">
+                                        <rect key="frame" x="154" y="21" width="67" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19939199090000001" green="0.47977310420000002" blue="0.62184071539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EQr-HQ-WoO" firstAttribute="centerY" secondItem="LAE-va-5RT" secondAttribute="centerY" id="4Fy-Id-4od"/>
+                                    <constraint firstItem="EQr-HQ-WoO" firstAttribute="top" secondItem="LAE-va-5RT" secondAttribute="top" constant="21" id="M2s-sa-KA1"/>
+                                    <constraint firstItem="EQr-HQ-WoO" firstAttribute="centerX" secondItem="LAE-va-5RT" secondAttribute="centerX" id="Xlt-nV-9GH"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Colored Lost &amp; Hound Logo" translatesAutoresizingMaskIntoConstraints="NO" id="cpI-xx-QhP">
+                                <rect key="frame" x="-3" y="82" width="378" height="179"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lost &amp; Hound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INQ-ze-ODB">
+                                <rect key="frame" x="126.5" y="281" width="122" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="0.20116972923278809" green="0.47981137037277222" blue="0.62185925245285034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tni-gN-w3a" firstAttribute="leading" secondItem="LAE-va-5RT" secondAttribute="leading" id="58i-eh-Fvb"/>
+                            <constraint firstItem="INQ-ze-ODB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5rE-yt-OoD"/>
+                            <constraint firstItem="tni-gN-w3a" firstAttribute="trailing" secondItem="LAE-va-5RT" secondAttribute="trailing" id="8sq-zv-O6a"/>
+                            <constraint firstItem="cpI-xx-QhP" firstAttribute="centerX" secondItem="tni-gN-w3a" secondAttribute="centerX" constant="-1.5" id="Cms-CO-gcX"/>
+                            <constraint firstItem="tni-gN-w3a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="F1f-Q6-xV4"/>
+                            <constraint firstItem="cpI-xx-QhP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="Qul-oX-Ycj"/>
+                            <constraint firstItem="cpI-xx-QhP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19" id="UoM-Ak-S1q"/>
+                            <constraint firstItem="LAE-va-5RT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WwL-eP-E5C"/>
+                            <constraint firstItem="INQ-ze-ODB" firstAttribute="top" secondItem="cpI-xx-QhP" secondAttribute="bottom" constant="20" id="cVj-Wz-h7o"/>
+                            <constraint firstItem="INQ-ze-ODB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0o-tw-itc"/>
+                            <constraint firstItem="INQ-ze-ODB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="281" id="nVd-Wd-cH1"/>
+                            <constraint firstItem="INQ-ze-ODB" firstAttribute="centerX" secondItem="tni-gN-w3a" secondAttribute="centerX" id="qHB-nn-LJB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tni-gN-w3a" secondAttribute="bottom" constant="74" id="t4q-Yz-Sf8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.5" y="26.408450704225352"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FBX-R4-g5y">
+            <objects>
+                <viewController id="p93-6G-518" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhY-St-mrS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to Lost &amp; Hound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3K-bm-B1M">
+                                <rect key="frame" x="20" y="142" width="199" height="95"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                <color key="textColor" red="0.20116972923278809" green="0.47981137037277222" blue="0.62185925245285034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="qj4-dr-s3N">
+                                <rect key="frame" x="37.5" y="245" width="300" height="73"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username or email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYJ-O1-r2K">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="USY-dp-jsM"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u8y-wc-p47">
+                                        <rect key="frame" x="0.0" y="43" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NYJ-O1-r2K" firstAttribute="centerX" secondItem="qj4-dr-s3N" secondAttribute="centerX" id="eeE-Nb-hBM"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Colored Lost &amp; Hound Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wm3-NE-77i">
+                                <rect key="frame" x="174" y="121" width="201" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wm3-NE-77i" secondAttribute="height" multiplier="201:116" id="2eL-0D-f51"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qj4-dr-s3N" firstAttribute="top" secondItem="d3K-bm-B1M" secondAttribute="bottom" constant="8" symbolic="YES" id="36d-u2-hhK"/>
+                            <constraint firstItem="qj4-dr-s3N" firstAttribute="top" secondItem="Wm3-NE-77i" secondAttribute="bottom" constant="8" symbolic="YES" id="6jQ-GM-Lq8"/>
+                            <constraint firstItem="qj4-dr-s3N" firstAttribute="centerX" secondItem="uhY-St-mrS" secondAttribute="centerX" id="GPi-Jf-MfV"/>
+                            <constraint firstItem="d3K-bm-B1M" firstAttribute="top" secondItem="975-Aa-Kex" secondAttribute="top" constant="122" id="Jo7-Ik-kCJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wm3-NE-77i" secondAttribute="trailing" id="Kg0-X3-3jE"/>
+                            <constraint firstItem="975-Aa-Kex" firstAttribute="trailing" secondItem="d3K-bm-B1M" secondAttribute="trailing" constant="156" id="e7j-MU-08u"/>
+                            <constraint firstItem="d3K-bm-B1M" firstAttribute="leading" secondItem="975-Aa-Kex" secondAttribute="leading" constant="20" id="gXg-aM-Ndh"/>
+                            <constraint firstItem="Wm3-NE-77i" firstAttribute="leading" secondItem="975-Aa-Kex" secondAttribute="leading" constant="174" id="gih-as-7ws"/>
+                            <constraint firstItem="qj4-dr-s3N" firstAttribute="centerX" secondItem="uhY-St-mrS" secondAttribute="centerX" id="rOx-6X-IZU"/>
+                            <constraint firstItem="Wm3-NE-77i" firstAttribute="top" secondItem="975-Aa-Kex" secondAttribute="top" constant="101" id="xvL-te-5LF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="975-Aa-Kex"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I76-8Z-QNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="-276.61169415292358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wFK-yc-lFF">
+            <objects>
+                <viewController id="HKa-JB-zfc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rfY-Y1-OZe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IfC-Um-b2F"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Laa-vG-7x3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1719" y="26"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4wm-dU-oaE">
+            <objects>
+                <viewController id="Jkv-j6-DRQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pCb-uV-vj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-Gt-3J8">
+                                <rect key="frame" x="37" y="83" width="199" height="95"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="0.20116972920000001" green="0.47981137039999999" blue="0.62185925249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-eG-AwH">
+                                <rect key="frame" x="37.5" y="186" width="300" height="198"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TAP-JY-M4g">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="61W-FE-pHu">
+                                        <rect key="frame" x="0.0" y="42" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHk-7h-aww">
+                                        <rect key="frame" x="0.0" y="84" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsh-tM-8Gs">
+                                        <rect key="frame" x="0.0" y="126" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M36-v6-BOL">
+                                        <rect key="frame" x="0.0" y="168" width="300" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="ZDt-V5-uTL"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Colored Lost &amp; Hound Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6nU-kk-6ob">
+                                <rect key="frame" x="149" y="62" width="226" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6nU-kk-6ob" secondAttribute="height" multiplier="113:58" id="JvF-qr-W7F"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="n4j-eG-AwH" firstAttribute="top" secondItem="Cor-Gt-3J8" secondAttribute="bottom" constant="8" symbolic="YES" id="3Dv-mZ-ayU"/>
+                            <constraint firstItem="6nU-kk-6ob" firstAttribute="leading" secondItem="7bU-io-OPY" secondAttribute="leading" constant="149" id="5iT-wr-A5D"/>
+                            <constraint firstItem="7bU-io-OPY" firstAttribute="trailing" secondItem="Cor-Gt-3J8" secondAttribute="trailing" constant="139" id="OTs-Nb-RUg"/>
+                            <constraint firstItem="n4j-eG-AwH" firstAttribute="centerX" secondItem="pCb-uV-vj4" secondAttribute="centerX" id="Oqb-Cz-aoN"/>
+                            <constraint firstItem="Cor-Gt-3J8" firstAttribute="top" secondItem="7bU-io-OPY" secondAttribute="top" constant="63" id="VIA-eU-dmG"/>
+                            <constraint firstAttribute="trailing" secondItem="6nU-kk-6ob" secondAttribute="trailing" id="jaY-7x-aat"/>
+                            <constraint firstItem="6nU-kk-6ob" firstAttribute="top" secondItem="7bU-io-OPY" secondAttribute="top" constant="42" id="mRX-VP-FgR"/>
+                            <constraint firstItem="Cor-Gt-3J8" firstAttribute="leading" secondItem="7bU-io-OPY" secondAttribute="leading" constant="37" id="r19-8h-kYh"/>
+                            <constraint firstItem="n4j-eG-AwH" firstAttribute="top" secondItem="6nU-kk-6ob" secondAttribute="bottom" constant="8" symbolic="YES" id="xrc-0d-0NN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7bU-io-OPY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9e-ye-gEz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="514.99250374812596"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Colored Lost &amp; Hound Logo" width="380" height="400"/>
+    </resources>
 </document>
